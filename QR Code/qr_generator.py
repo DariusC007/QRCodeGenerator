@@ -24,7 +24,7 @@ root.title("QR Code Generator")
 root.geometry("400x400")
 
 # UI
-tk.Label(root, text="Introdu linkul:").pack(pady=10)
+tk.Label(root, text="Enter the link:").pack(pady=10)
 entry = tk.Entry(root, width=40)
 entry.pack(pady=5)
 
@@ -32,5 +32,6 @@ tk.Button(root, text="Generate QR", command=generate_qr).pack(pady=10)
 
 label_img = tk.Label(root)
 label_img.pack(pady=20)
+
 
 root.mainloop()
